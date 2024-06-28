@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Paper Scissor</title>
+    <title>Stone-Paper-Scissor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="bg-gray-900 text-white ">
+    <nav class="flex justify-between items-center text-white p-5 text-2xl font-serif  m-4 rounded-lg
+         navig bg-gradient-to-b from-sky-600 to-sky-900 ">
+        <ul class="nav-left flex  items-center">
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Rock-paper-scissors.svg" alt=""
+                    width="60">
+            </li>
+            <li class="ml-4 font-extrabold text-3xl tracking-wide ">
+                Rock Paper Scissor
+            </li>
+        </ul>
+        <ul class="nav-right ">
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img class="logoImg" src="rock.png" alt="">
+        </div>
+        <div class="choice" id="paper">
+            <img class="logoImg" src="paper.png" alt="">
+        </div>
+        <div class="choice" id="scissors">
+            <img class="logoImg" src="scissors.png" alt="">
+        </div>
+    </div>
+    <div class="scoreBoard flex justify-center gap-12 m-7">
+        <div class="score">
+            <p id="yourScore" class="text-5xl m-5">0</p>
+            <p class="text-xl">YOU</p>
+        </div>
+        <div class="score">
+            <p id="compScore" class="text-5xl m-5">0</p>
+            <p class="text-xl">COMP</p>
+        </div>
+    </div>
+    <div class="printMsg mt-16 ">
+        <p class="text-3xl bg-blue-700  inline p-4 rounded-2xl ">Play Your Move</p>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
