@@ -21,9 +21,11 @@
     align-items: center;
 }
 
-.choice :hover {
+.choice :hover  {
     opacity: 0.3;
     cursor: pointer;
+    border: 5px solid white;
+    transition: all .2s;
 }
 
 .logoImg {
