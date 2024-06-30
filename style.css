@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.choice :hover  {
+.choice :hover {
     opacity: 0.3;
     cursor: pointer;
     border: 5px solid white;
@@ -33,4 +33,21 @@
     width: 150px;
     height: 150px;
     object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .logoImg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .choices {
+        justify-content: space-around;
+    }
+
+    .choice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
